@@ -1,0 +1,68 @@
+# Local agent settings and secrets
+/.codex/
+.env
+.env.*
+!.env.example
+
+# CMake build trees and generated output
+/build/
+/build_*/
+/build-*/
+/cmake-build-*/
+/out/
+/install/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+Testing/
+compile_commands.json
+CMakeUserPresets.json
+
+# Local third-party SDKs; keep the required vendored JSON header
+/3rdparty/*
+!/3rdparty/json.hpp
+
+# Large local point clouds; keep sample JSON configuration
+/data/**/*.ply
+/data/**/*.pcd
+/data/**/*.las
+/data/**/*.laz
+
+# Compiler and Visual Studio generated files
+.vs/
+*.user
+*.suo
+*.VC.db
+*.VC.VC.opendb
+*.VC.opendb
+*.ipch
+*.obj
+*.o
+*.pch
+*.pdb
+*.idb
+*.ilk
+*.tlog/
+*.exe
+*.dll
+*.lib
+*.exp
+*.a
+*.so
+*.dylib
+
+# Script caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Logs, temporary files, and OS metadata
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini

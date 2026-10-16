@@ -1,0 +1,20 @@
+{
+  "pipeline": "glue_detection_v1",
+  "operators": [
+    {
+      "name": "PointCloudLoaderOperator",
+      "params": { "cloudDir": "D:/scan/latest.ply" }
+    },
+    {
+      "name": "PointCloudROIManagerOperator",
+      "params": {
+        "configPath": "config/roi_config.json",
+        "octreeResolutionMM": 5.0
+      }
+    },
+    {
+      "name": "PointCloudPreprocessOperator",
+      "params": { "voxelSizeMM": 1.0 }
+    }
+  ]
+}

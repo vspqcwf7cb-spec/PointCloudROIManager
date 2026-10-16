@@ -1,0 +1,7 @@
+{
+  "coordinate": "robot",
+  "octreeResolutionMM": 5.0,
+  "rois": [
+    { "name": "G_B50", "type": "box", "min": { "x": 60.0, "y": 53.0, "z": -5.0 }, "max": { "x": 80.0, "y": 83.0, "z": 1.0 } }
+  ]
+}
